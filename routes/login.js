@@ -14,12 +14,13 @@ router.get('/', function(req, res) {
     const usersString = JSON.stringify(siteUsers);
         for(var x = 0; x < usersString.length; x++){
             if(user.name == usersString[x].name & user.password == usersString[x].password){
-                res.render('listofusers');
+                res.render('index');
                 console.log("user login success");
             }else{
-                res.render('index');
+                res.render('login');
             }
         }
+        res.render('index');
 });
 
 module.exports = router;

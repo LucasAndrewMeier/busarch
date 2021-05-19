@@ -9,11 +9,11 @@
     <title>User</title>
 </head>
 <body>
-    <div>
-        <h1>new user:</h1>
-        <p>Name: {{name}}</p>
-        <p>Password: {{password}}</p> 
-    </div>
-    <a href="/login"><button type="button" class="btn btn-success">Confirm and View</button></a>
+    <h1>login:</h1>
+    <form action="/loginfunc" method="GET">
+        <input type="text"  name="name" class="form-control" placeholder="enter name" size="20"><br>
+        <input type="text"  name="password" class="form-control" placeholder="enter password" size="20"><br>
+        <input type="submit" class="btn btn-primary" value="submit">
+    </form>
 </body>
 </html>
